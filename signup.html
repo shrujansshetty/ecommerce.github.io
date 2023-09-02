@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOSHOP-signup</title>
+    <style>
+        body {
+            margin: 0; 
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+            height: 100vh;
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%; 
+            max-width: 600px; 
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        form {
+            text-align: left;
+        }
+        label {
+            display: block;
+            
+            
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="password"] {
+            width: 60%;
+            padding: 1px;
+            margin-bottom: 5px;
+        }
+        input[type="checkbox"] {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body bgcolor="black" text="red">
+    <div class="container">
+      <img src="background.jpg" alt="background" style="width:100%;">
+        <div class="centered">
+            <u><h1>Sign Up</h1></u>
+            <p>Please fill in this form to create an account.</p>
+            <form action="mainindex1.html">
+                
+                <label for="first name">First Name:</label>
+                <input type="text" placeholder="First Name" name="first name" required>
+                <label for="last name">Last Name:</label>
+                <input type="text" placeholder="Last Name" name="last name" required>
+                <label for="mobile number">Mobile Number:</label>
+                <input type="number" placeholder="Enter number" name="mobile number" required>
+                <label for="Email">Email:</label>
+                <input type="email" placeholder="Email" name="Email" required>
+                <label for="password">Password:</label>
+                <input type="password" placeholder="Password" name="password" required>
+                <label for="confpassword">Confirm Password:</label>
+                <input type="password" placeholder="Confirm Password" name="confpassword" required>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Conditions</a>.</p>
+                <input type="reset">
+                <input type="submit">
+                <br><br>
+                Already have an account? <a href="signin.html" style="color:dodgerblue">Sign In</a><br><br>
+                Go back to home page?<a href="index.html" style="color:dodgerblue">Home</a>
+            </form>
+        
+        </div>
+    </div>
+</body>
+</html>
